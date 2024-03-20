@@ -1,0 +1,12 @@
+main blue - 6415ff
+larger texts - 253363
+faint text - 7d8ca2
+steps numbers - cbd5e0
+affordable bg - 9ae6b4
+prof bg - feb2b2
+personal (3db5ae - 7be2d6)
+business (4c52c0 - 667de9)
+enterprise (f66969 - fdadad)
+prices - 253363
+stars - f6ad55
+nav btns bg - f0ebff

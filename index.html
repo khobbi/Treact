@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper containerC" id="wrapper">
+        <nav class="containerR nav">
+            <a href="index.html" class="containerR logoCont">
+                <img src="assets/logo.png" alt="Treact logo" height="40">
+            </a>
+            <ul class="navbar containerR">
+                <li class="navitem"><a href="#">About</a></li>
+                <li class="navitem"><a href="#">Blog</a></li>
+                <li class="navitem"><a href="#">Pricing</a></li>
+                <li class="navitem"><a href="#">Contact Us</a></li>
+                <li class="navitem"><a href="#">Login</a></li>
+                <li class="navitem"><button class="btnPrimary">Sign Up</button></li>
+            </ul>
+            <button class="toggle-button" onclick="toggleMenu(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </nav>
+        <section id="sectTop" class="containerR">
+            <div class="containerR gridContainer">
+                <div class="gridItem50 containerC">
+                    <h1 class="sectTitle1 tColSecondary">Beautiful React <br>Templates <span class="tColPrimary">for you.</span></h1>
+                    <p>Our templates are easy to setup, understand and <br>customize. Fully modular components with variety of<br>
+                        pages and components.
+                    </p>
+                    <form id="getStartedForm" action="#" method="get">
+                        <div class="searchbarCont containerR">
+                            <input type="email" name="email" id="email" placeholder="Your Email Address" required>
+                            <input class="btnPrimary" type="submit" value="Get Started">
+                        </div>
+                    </form>
+                    <p style="font-weight: bold; font-size: x-small;">OUR TRUSTED CUSTOMERS</p>
+                    <div class="containerR">
+                        <img src="assets/fortune.png" alt="">
+                        <img src="assets/pst.png" alt="">
+                        <img src="assets/geo.png" alt="">
+                    </div>
+                </div>
+                <div class="gridItem50 containerC">
+                    <img class="imgLg" src="assets/sitting.png" alt="Sitting">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
