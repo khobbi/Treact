@@ -7,7 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #fff;
+    background-color: #FFF;
     color: #7d8ca2;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -61,6 +61,7 @@ nav{
     background-color: #6415ff;
     border-radius: 30px;
     font-weight: bold;
+    width: fit-content;
 }
 .btnPrimary:hover{
     background-color: #8f57ff;
@@ -104,9 +105,14 @@ nav{
 
 section{
     padding: 40px 20px;
+    /* background-color: #3a1a00; */
 }
 .sectTitle1{
     font-size: xxx-large;
+}
+.gridContainer{
+    width: 100%;
+    gap: 30px;
 }
 .gridItem50{
     flex: 1 1 100%;
@@ -135,6 +141,61 @@ section{
 #getStartedForm input[type=email]:focus{
     border: 0px solid ;
     font-size: 1em;
+}
+
+.tBold{
+    font-weight: bold;
+}
+.stack{
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    /* background-color: #e9deff; */
+}
+.gridItem3{
+    flex: 0 1 30%;
+    /* width: 33%; */
+}
+.gridContMore{
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 50px;
+}
+.gridItem3 img{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #cbd5e0;
+    padding: 15px;
+    border-radius: 50%;
+}
+.gridItem3{
+    min-height: 150px;
+    text-align: left;
+    gap: 10px;
+}
+.gridItemTitle{
+    color: #253363;
+}
+.gridItemTxtCont{
+    gap: 20px;
+}
+#sectSteps .stack{
+    align-items: start;
+}
+#sectSteps .gridItem3{
+    min-height: auto;
+}
+.stepNum{
+    color: #cbd5e0;
+    font-size: 40px
+}
+.colorIcons{
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
 }
 /* MOBILE */
 @media (max-width:678px) {
