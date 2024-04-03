@@ -27,10 +27,6 @@ body{
 .tColTertiary{color: #7d8ca2;}
 .tColTertiary2{color: #cbd5e0;}
 
-.sect{
-
-}
-
 nav{
     justify-content: space-between;
     padding: 10px 20px;
@@ -61,12 +57,15 @@ nav{
     background-color: #6415ff;
     border-radius: 30px;
     font-weight: bold;
-    width: fit-content;
+    width: 120px;
+    height: 60px;
+    transition: background-color 0.2s;
 }
 .btnPrimary:hover{
     background-color: #8f57ff;
     cursor: pointer;
 }
+
 .toggle-button{
     position: absolute;
     top: 1em;
@@ -102,10 +101,8 @@ nav{
 .toggle-button.active .bar:nth-child(3){
     transform: rotate(-45deg);
 }
-
-section{
+.sect{
     padding: 40px 20px;
-    /* background-color: #3a1a00; */
 }
 .sectTitle1{
     font-size: xxx-large;
@@ -121,7 +118,6 @@ section{
 }
 .imgLg{
     width: 100%;
-    /* margin: 0 auto; */
 }
 .searchbarCont{
     border: 2px solid #cbd5e0;
@@ -155,6 +151,9 @@ section{
 }
 .gridItem3{
     flex: 0 1 30%;
+    min-height: 150px;
+    text-align: left;
+    gap: 10px;
     /* width: 33%; */
 }
 .gridContMore{
@@ -170,11 +169,6 @@ section{
     border: 2px solid #cbd5e0;
     padding: 15px;
     border-radius: 50%;
-}
-.gridItem3{
-    min-height: 150px;
-    text-align: left;
-    gap: 10px;
 }
 .gridItemTitle{
     color: #253363;
@@ -197,8 +191,165 @@ section{
     padding: 10px;
     border-radius: 50%;
 }
+.starsCont{
+    gap: 10px;
+}
+.starsCont img{
+    width: 25px;
+}
+.testimonialHolder{
+    justify-content: space-between;
+}
+.testUserCont{
+    gap: 20px;
+    align-items: center;
+}
+.testUserCont img{
+    width: 70px;
+    height: 70px;
+}
+.testimonialPages{
+    align-items: center;
+    gap: 10px;
+}
+.testimonialPages img{
+    height: 50px;
+    width: 50px;
+    transition: all 0.2s;
+    background-color: #e9deff;
+}
+.testimonialPages img:hover{
+    cursor: pointer;
+    background-color: #8f57ff;
+}
+.testimonialPages img:active{
+    background-color: #6415ff;
+}
+#sectJumbotron{
+    justify-content: center;
+    align-items: center;
+}
+.jumbotron{
+    color: #FFF;
+    background-color: #6415ff;
+    padding: 100px;
+    margin: 40px 20px;
+    width: 100%;
+    font-size: 24px;
+    border-radius: 10px;
+    gap: 20px;
+    align-items: center;
+}
+
+.btnDanger{
+    background-color: #f66969;
+    box-shadow: 1px 4px 5px #253363;
+}
+.btnBorder{
+    border: 1px solid #e9deff;
+}
+footer{
+    background-color: #6415ff;
+    color: #FFF;
+    gap: 80px;
+}
+#footer .gridItem5{
+    flex: 1 1 20%;
+    gap: 10px;
+}
+#footer .gridItem5 h4{
+    margin-bottom: 10px;
+}
+#footer .gridItem5 a{
+    text-decoration: none;
+    color: #e9deff;
+    font-weight: bold;
+}
+footer .containerR:last-child{
+    justify-content: space-between;
+}
+footer .containerR:last-child .socials{
+    gap: 10px;
+}
+#sectPricing .gridContainer{
+    justify-content: space-evenly;
+}
+.priceCard{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #e9deff;
+    border-radius: 10px;
+    padding: 40px 10px;
+    gap: 20px;
+    border: 1px solid #cbd5e0;
+    transition: transform 0.2s;
+}
+.priceCard:hover{
+    transform: scale(1.15, 1.15);
+}
+/* FIRST, LAST cards */
+.priceCard:not(.priceCard:nth-child(2)){
+    background-color: #FFF;
+}
+.priceCard:not(.priceCard:nth-child(2)) .cardType{
+    color: #000;
+}
+.priceCard:not(.priceCard:nth-child(2)) .hr{
+    height: 1px;;
+    width: 100%;
+    background-color: #cbd5e0;
+}
+/* FIRST card only */
+.priceCard:nth-child(1){
+    border-top: 8px solid #3db5ae;
+}
+.priceCard:nth-child(1) button{
+    background-image: linear-gradient(to right, #3db5ae, #7be2d6);
+}
+.priceCard:nth-child(1) button:hover{
+    background-image: linear-gradient(to left, #3db5ae, #7be2d6);
+}
+/* FIRST card only */
+.priceCard:nth-child(3){
+    border-top: 8px solid #f66969;
+}
+.priceCard:nth-child(3) button{
+    background-image: linear-gradient(to right, #f66969, #fdadad);
+}
+.priceCard:nth-child(3) button:hover{
+    background-image: linear-gradient(to left, #f66969, #fdadad);
+}
+/* MIDDLE card */
+.priceCard:nth-child(2){
+    color: #FFF;
+    background-image: linear-gradient(#4c52c0, #667de9);
+}
+.priceCard:nth-child(2) h4:nth-child(3), 
+.priceCard:nth-child(2) h1:nth-child(2){
+    color: #FFF;
+}
+.priceCard:nth-child(2) .hr{
+    height: 1px;;
+    width: 100%;
+    background-color: #fff;
+}
+.priceCard:nth-child(2) .cardType{
+    color: #FFF;
+}
+.priceCard:nth-child(2) button{
+    color: #8f57ff;
+    background-color: #FFF;
+}
+.priceCard:nth-child(2) button:hover{
+    background-color: #e9deff;
+}
+.price{
+    font-size: 45px;
+}
+
 /* MOBILE */
-@media (max-width:678px) {
+@media (max-width:768px) {
     /* responsive navbar */
     .nav{
         flex-direction: column;
@@ -239,5 +390,74 @@ section{
 
     .sectTitle1{
         font-size: xx-large;
+    }
+
+    .gridContainer.containerR, .jumbotron.containerR{
+        flex-direction: column;
+    }
+
+    .btnPrimary{
+        padding: 10px;
+        width: 100px;
+        height: 50px;
+    }
+    .imgLg{
+        align-self: center;
+        width: 90%;
+    }
+    .gridContMore{
+        gap: 20px;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: start;
+        padding: 0 20px;
+    }
+
+    .starsCont img{
+        width: 20px;
+    }
+
+    .testimonialHolder{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .testimonialPages{
+        align-items: center;
+        gap: 10px;
+        align-self: end;
+    }
+
+    #sectFeatures .gridItem3{
+        flex: 1 1;
+        min-height: auto;
+    }
+
+    .priceCard{
+        width: 80%;
+        align-self: center;
+        gap: 10px;
+    }
+
+    .navbar .navitem button{
+        justify-content: center;
+        align-items: center;
+    }
+    footer .containerR.gridContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer .containerR:last-child{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .containerR:last-child .socials{
+        flex-direction: row;
+        justify-content: center;
     }
 }
